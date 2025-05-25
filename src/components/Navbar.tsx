@@ -16,9 +16,9 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-extrabold text-green-600 tracking-tight">BioMentor</h1>
+        <h1 className="text-2xl font-bold tracking-wide text-white">SmartLend AI</h1>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
@@ -26,7 +26,7 @@ export default function Navbar() {
             <a
               key={i}
               href={link.href}
-              className="text-sm font-medium text-gray-700 hover:text-green-600 transition"
+              className="text-sm font-medium text-white hover:text-yellow-300 transition"
             >
               {link.name}
             </a>
@@ -35,7 +35,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-green-600 focus:outline-none"
+          className="md:hidden text-white focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <svg
@@ -56,12 +56,12 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-md px-4 pb-4 space-y-2">
+        <div className="md:hidden bg-indigo-600 text-white px-4 pb-4 space-y-2 shadow-md">
           {navLinks.map((link, i) => (
             <a
               key={i}
               href={link.href}
-              className="block text-sm font-medium text-gray-700 hover:text-green-600 transition"
+              className="block text-sm font-medium hover:text-yellow-300 transition"
               onClick={() => setMenuOpen(false)}
             >
               {link.name}

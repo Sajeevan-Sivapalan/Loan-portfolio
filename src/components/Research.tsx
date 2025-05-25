@@ -1,44 +1,44 @@
 const highlights = [
   {
-    title: "Summarization",
-    icon: "🧠",
+    title: "AI Chatbot",
+    icon: "🤖",
     description:
-      "Uses Retrieval-Augmented Generation (RAG) and Flan-T5 to summarize educational content into concise, structured formats.",
+      "Built with Retrieval-Augmented Generation (RAG), the chatbot delivers instant, accurate responses to user-specific and policy-based loan inquiries.",
   },
   {
-    title: "Adaptive Quiz",
-    icon: "📊",
+    title: "OCR & Document Analysis",
+    icon: "📄",
     description:
-      "Dynamically adjusts difficulty levels using Item Response Theory (IRT) for personalized learning.",
+      "Utilizes Tesseract OCR to extract and validate information from payslips, ID cards, and CRIB reports for automated eligibility checks.",
   },
   {
-    title: "Answer Evaluation",
-    icon: "📝",
+    title: "Loan Prediction Models",
+    icon: "📈",
     description:
-      "Leverages LLaMA 3 and semantic similarity to score structured and essay-type answers with adaptive feedback.",
+      "Implements Logistic Regression for binary eligibility classification and Random Forest Regression for personalized loan amount prediction.",
   },
   {
-    title: "Spaced Repetition",
-    icon: "🔁",
+    title: "Financial Guidance Engine",
+    icon: "💡",
     description:
-      "Incorporates SM-2 algorithm to enhance long-term memory retention through spaced learning intervals.",
+      "Suggests collateral-based loan alternatives and savings plans with a guidance model achieving R² = 0.98 and MSE ≈ 0.0010.",
   },
 ];
 
 export default function Research() {
   return (
-    <section id="research" className="py-24 bg-gradient-to-b from-white to-green-50">
+    <section id="research" className="py-24 bg-gradient-to-br from-indigo-50 via-white to-purple-100">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-center text-green-700 mb-16">🌿 Research Highlights</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <h2 className="text-4xl font-extrabold text-center text-purple-700 mb-16">📌 Research Highlights</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {highlights.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border-l-4 border-green-500"
+              className="bg-white rounded-2xl border border-purple-200 p-6 text-center shadow-md hover:shadow-xl transition-transform duration-300 hover:-translate-y-1"
             >
-              <div className="text-3xl mb-3">{item.icon}</div>
-              <h3 className="text-xl font-semibold text-green-800">{item.title}</h3>
-              <p className="text-gray-700 mt-2 text-sm leading-relaxed">{item.description}</p>
+              <div className="text-4xl mb-4 text-purple-600">{item.icon}</div>
+              <h3 className="text-lg font-bold text-purple-800 mb-2">{item.title}</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
             </div>
           ))}
         </div>

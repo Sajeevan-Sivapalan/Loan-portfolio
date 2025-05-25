@@ -75,27 +75,24 @@ const milestones = [
 
 export default function Milestones() {
   return (
-    <section id="milestones" className="py-24 bg-gradient-to-b from-green-50 via-white to-green-100">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6">
-        <h2 className="text-4xl font-extrabold text-center text-green-700 mb-16">🌿 Project Milestones</h2>
-        <div className="relative border-l-4 border-gradient-to-b from-green-400 to-green-600 space-y-10">
+    <section id="milestones" className="py-24 bg-gradient-to-br from-sky-50 via-white to-blue-100">
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-4xl font-extrabold text-center text-blue-800 mb-16">📌 Project Milestones</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {milestones.map((m, i) => (
-            <div key={i} className="relative pl-6 group">
-              {/* Dot */}
-              <span className="absolute -left-3 top-4 w-4 h-4 bg-gradient-to-br from-green-400 to-green-600 shadow-lg rounded-full ring-4 ring-white group-hover:scale-110 transition-transform duration-200 ease-out"></span>
-
-              {/* Card */}
-              <div className="bg-white/90 backdrop-blur-sm border border-white/50 shadow-md hover:shadow-xl hover:scale-[1.01] transition-all duration-300 rounded-xl p-5">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
-                  <div>
-                    <h3 className="text-lg font-semibold text-green-800">{m.title}</h3>
-                    <p className="text-sm text-gray-500">{m.date}</p>
-                  </div>
-                  <span className="text-xs font-semibold px-3 py-1 rounded-full bg-green-600 text-white shadow">
-                    {m.marks}
-                  </span>
-                </div>
-                <p className="text-sm text-gray-600 mt-3 leading-relaxed">{m.description}</p>
+            <div
+              key={i}
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-transform hover:-translate-y-1 border-l-4 border-blue-500 p-6 flex flex-col justify-between"
+            >
+              <div>
+                <h3 className="text-lg font-bold text-blue-800 mb-1">{m.title}</h3>
+                <p className="text-sm text-gray-500 mb-3">{m.date}</p>
+                <p className="text-sm text-gray-600 leading-relaxed">{m.description}</p>
+              </div>
+              <div className="mt-4">
+                <span className="inline-block text-xs font-semibold bg-blue-100 text-blue-800 px-3 py-1 rounded-full">
+                  {m.marks}
+                </span>
               </div>
             </div>
           ))}

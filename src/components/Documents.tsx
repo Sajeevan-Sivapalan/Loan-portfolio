@@ -2,113 +2,74 @@ const allDocuments = [
   {
     category: "Project Proposal",
     files: [
-      { name: "Proposal Report - IT21375132", path: "IT21375132-Project-Proposal.pdf" },
+      { name: "Proposal Report - IT21164644 ", path: "IT21164644 -Project-Proposal.pdf" },
       { name: "Proposal Report - IT21068478", path: "IT21068478-Project-Proposal.pdf" },
-      { name: "Proposal Report - IT21264634", path: "IT21264634-Project-Proposal.pdf" },
-      { name: "Proposal Report - IT21204302", path: "IT21204302-Project-Proposal.pdf" },
-    ],
-  },
-  {
-    category: "Status Documents",
-    files: [
-      { name: "Status Document 1 - IT21375132", path: "IT21375132_Status_Document_1.pdf" },
-      { name: "Status Document 1 - IT21068478", path: "IT21068478_Status_Document_1.pdf" },
-      { name: "Status Document 1 - IT21264634", path: "IT21264634_Status_Document_1.pdf" },
-      { name: "Status Document 1 - IT21204302", path: "IT21204302_Status_Document_1.pdf" },
-      { name: "Status Document 2 - IT21375132", path: "IT21375132_Status_Document_2.pdf" },
-      { name: "Status Document 2 - IT21068478", path: "IT21068478_Status_Document_2.pdf" },
-      { name: "Status Document 2 - IT21264634", path: "IT21264634_Status_Document_2.pdf" },
-      { name: "Status Document 2 - IT21204302", path: "IT21204302_Status_Document_2.pdf" },
+      { name: "Proposal Report - IT21191060", path: "IT2191060_Project_Proposal" },
     ],
   },
   {
     category: "Final Reports",
     files: [
-      { name: "Final Report - IT21375132", path: "IT21375132_Final-Report.pdf" },
+      { name: "Final Report - IT21164644 ", path: "IT21164644 _Final-Report.pdf" },
       { name: "Final Report - IT21068478", path: "IT21068478_Final-Report.pdf" },
-      { name: "Final Report - IT21264634", path: "IT21264634_Final-Report.pdf" },
-      { name: "Final Report - IT21204302", path: "IT21204302_Final-Report.pdf" },
+      { name: "Final Report - IT21191060 ", path: "IT2191060_Final" },z
       { name: "Final Group Report", path: "Final_Report-24_25J_257.pdf" },
-    ],
-  },
-  {
-    category: "Logbooks",
-    files: [
-      { name: "Log Book - IT21375132", path: "IT21375132-Log Book.pdf" },
-      { name: "Log Book - IT21068478", path: "IT21068478-Log Book.pdf" },
-      { name: "Log Book - IT21264634", path: "IT21264634-Log Book.pdf" },
-      { name: "Log Book - IT21204302", path: "IT21204302-Log Book.pdf" },
     ],
   },
   {
     category: "Presentations",
     files: [
-      { name: "Proposal Presentation", path: "Proposal_Presentation-24-25J-257.pdf" },
-      { name: "Progress Presentation 1", path: "Progress_Presentation_1-24-25J-257.pdf" },
-      { name: "Progress Presentation 2", path: "Progress_Presentation_2-24-25J-257.pdf" },
+      { name: "Proposal Presentation", path: "Proposal_Presentation-24-25J-.pdf" },
+      { name: "Progress Presentation 1", path: "Progress_Presentation_1-24-25J-.pdf" },
+      { name: "Progress Presentation 2", path: "Progress_Presentation_2-24-25J-.pdf" },
       { name: "Final Presentation", path: "Final_Presentation.pdf" },
     ],
   },
   {
     category: "Research Paper",
     files: [
-      { name: "Research Paper", path: "Research_Paper-24-25J-257.pdf" },
-    ],
-  },
-  {
-    category: "Registration Docs",
-    files: [
-      { name: "Topic Assessment", path: "TAF_24-25J-257.pdf" },
-      { name: "Project Charter Document", path: "Project_Charter_Document.pdf" },
+      { name: "Research Paper", path: "Research_Paper-24-25J-.pdf" },
     ],
   },
 ];
 
-
-
 export default function Documents() {
   return (
-    <section
-      id="documents"
-      className="py-24 bg-gradient-to-b from-white to-green-50"
-    >
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-center text-green-700 mb-16">
-          📚 Project Documents
+    <section id="documents" className="py-24 bg-gradient-to-tr from-indigo-50 to-indigo-100">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-4xl font-bold text-center text-indigo-700 mb-16">
+          📁 Project Documents
         </h2>
 
         {allDocuments.map((section, idx) => (
           <div key={idx} className="mb-12">
-            <h3 className="text-2xl font-semibold text-green-800 mb-6">
+            <h3 className="text-2xl font-semibold text-indigo-800 mb-6 border-b border-indigo-300 pb-2">
               {section.category}
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               {section.files.map((file, i) => (
-                <div
-                  key={i}
-                  className="bg-white p-4 border border-green-200 rounded-xl shadow-sm hover:shadow-md transition"
-                >
+                <div key={i} className="bg-white shadow-lg rounded-xl p-5 border-t-4 border-indigo-400 hover:border-indigo-600 transition-all">
                   <div className="flex items-start gap-3">
-                    <div className="text-2xl">📄</div>
-                    <div className="text-sm font-medium text-gray-800">
+                    <div className="text-3xl">📄</div>
+                    <div className="text-sm font-medium text-gray-800 line-clamp-2">
                       {file.name}
                     </div>
                   </div>
-                  <div className="mt-4 text-center space-x-4">
+                  <div className="mt-4 flex justify-between text-xs text-indigo-600 font-medium">
                     <a
                       href={`/docs/${file.path}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-green-600 font-semibold hover:underline"
+                      className="hover:underline"
                     >
-                      View →
+                      View
                     </a>
                     <a
                       href={`/docs/${file.path}`}
                       download
-                      className="text-sm text-green-600 font-semibold hover:underline"
+                      className="hover:underline"
                     >
-                      Download ↓
+                      Download
                     </a>
                   </div>
                 </div>

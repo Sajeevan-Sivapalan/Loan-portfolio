@@ -1,68 +1,45 @@
-import DharaneImg from '../assets/images/dharane.png';
-
-
 const team = [
   {
-    name: "Dr. Sanvitha Kasthuriarachchi",
-    role: "Supervisor",
-    email: "sanvitha.k@sliit.lk",
-    img: "https://ui-avatars.com/api/?name=Sanvitha+K&background=34d399&color=fff",
+    name: "Pathirathna D N",
+    role: "Group Member (IT21164644)",
+    email: "it21164644@my.sliit.lk",
+    img: "https://ui-avatars.com/api/?name=Pathirathna+D+N&background=8b5cf6&color=fff",
   },
   {
-    name: "Gokul Abisheak",
-    role: "Team Leader",
-    email: "gokulabisheak12@gmail.com",
-    img: "https://ui-avatars.com/api/?name=Gokul+Abisheak&background=34d399&color=fff",
+    name: "Hilma M.I.F",
+    role: "Group Member (IT21142178)",
+    email: "it21142178@my.sliit.lk",
+    img: "https://ui-avatars.com/api/?name=Hilma+M+I+F&background=8b5cf6&color=fff",
   },
   {
-    name: "Sajeevan S",
-    role: "Member",
-    email: "sajeesiva12@gmail.com",
-    img: "https://ui-avatars.com/api/?name=Sajeevan+S&background=34d399&color=fff",
+    name: "P.R.I. Pravean",
+    role: "Group Member (IT21191060)",
+    email: "it21191060@my.sliit.lk",
+    img: "https://ui-avatars.com/api/?name=Pravean+P+R+I&background=8b5cf6&color=fff",
   },
-  {
-    name: "Dharane S",
-    role: "Member",
-    email: "dharanesegar08@gmail.com",
-  img: DharaneImg, 
-  },
-  {
-    name: "Sujitha S",
-    role: "Member",
-    email: "sujithasrikanthan@gmail.com",
-    img: "https://ui-avatars.com/api/?name=Sujitha+S&background=34d399&color=fff",
-  },
-  
-  {
-    name: "Karthiga Rajendran",
-    role: "Co-Supervisor",
-    email: "karthiga.r@sliit.lk",
-    img: "https://ui-avatars.com/api/?name=Karthiga+Rajendran&background=34d399&color=fff",
-  },
-  
 ];
 
 export default function Team() {
   return (
-    <section id="team" className="py-20 bg-gradient-to-b from-green-50 via-white to-green-100">
+    <section id="team" className="py-24 bg-gradient-to-br from-indigo-50 via-white to-purple-100">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-green-700 mb-12">💚 Meet Our Team</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <h2 className="text-4xl font-extrabold text-purple-700 mb-12">💼 Project Team</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {team.map((member, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all p-6 group"
+              className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-300 border border-purple-200"
             >
               <img
                 src={member.img}
                 alt={member.name}
-                className="w-24 h-24 rounded-full mx-auto shadow-md mb-4"
+                className="w-24 h-24 rounded-full mx-auto border-4 border-purple-400 mb-4"
               />
-              <h3 className="text-lg font-semibold text-green-800">{member.name}</h3>
-              <p className="text-sm text-gray-500">{member.role}</p>
+              <h3 className="text-lg font-bold text-purple-800">{member.name}</h3>
+              <p className="text-sm text-gray-600 mt-1">{member.role}</p>
               <a
                 href={`mailto:${member.email}`}
-                className="text-green-600 hover:underline mt-2 block text-sm"
+                className="text-sm text-indigo-600 hover:underline mt-2 inline-block"
               >
                 {member.email}
               </a>

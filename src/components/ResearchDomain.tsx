@@ -2,142 +2,100 @@ import { useState } from "react";
 
 const sections = [
   {
-    label: "Background",
+    label: "Abstract",
     content: (
-  <div className="space-y-4">
-    <p className="text-gray-700 leading-relaxed text-center">
-      A/L Biology students in Sri Lanka face challenges with memorizing complex terms, understanding long texts, and getting personalized feedback. Traditional tools don’t support diverse learning styles or adapt to individual needs.
-    </p>
-    <p className="text-gray-700 leading-relaxed text-center">
-      BioMentor was created to solve these problems. It’s a personalized e-learning platform that uses spaced repetition, adaptive quizzes, summaries, and answer evaluation to help students learn more effectively using government-approved content.
-    </p>
-  </div>
-),
-
-
-  },
-  {
-    label: "Research Gap",
-    content: (
-      <p className="text-gray-700 leading-relaxed text-center">
-    Despite the rise of digital education platforms in Sri Lanka, A/L Biology students still face significant challenges due to the lack of personalized and adaptive learning tools. Existing platforms are often static, offering limited support for vocabulary retention, comprehension of large volumes of text, or development of exam-oriented answering skills. They do not adapt to a student's individual performance or provide detailed feedback, making it difficult for learners to identify and improve on weak areas. Moreover, there is minimal integration of features that support auditory learners, topic-specific summaries, or structured answer evaluation-all of which are crucial for mastering A/L Biology. This gap calls for a more holistic solution that aligns with the local syllabus, accommodates diverse learning styles, and provides real-time, actionable insights to guide student progress-goals that BioMentor aims to fulfill.
+      <p className="text-gray-700 leading-relaxed">
+        This research presents a machine learning-powered web system to predict loan eligibility and eligible credit limits. It addresses issues in traditional banking such as delays, inefficiencies, and lack of transparency. Key components include: an AI chatbot for personalized loan insights, a document-based prediction module for loan qualification, and a financial literacy tool that offers alternative financing suggestions. The system achieves 79% prediction accuracy and 0.001 MSE for alternate financing models, enhancing both efficiency and financial inclusivity.
       </p>
     ),
   },
   {
-  label: "Research Problem",
-  content: (
-    <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8 text-left text-gray-700 text-base">
-      
-      <div className="bg-white shadow-md p-6 rounded-xl border-l-4 border-green-500">
-        <h4 className="font-semibold text-green-800 mb-2">📚 AI Summarization</h4>
-        <p>
-          How can we generate concise, exam-relevant summaries from A/L biology materials using customizable lengths and voice support, while ensuring alignment with the national syllabus?
-        </p>
-      </div>
-      
-      <div className="bg-white shadow-md p-6 rounded-xl border-l-4 border-green-500">
-        <h4 className="font-semibold text-green-800 mb-2">🧪 Adaptive Quizzes</h4>
-        <p>
-          How can we create a dynamic quiz system that adjusts MCQ difficulty based on student performance and accurately identifies learning gaps through real-time feedback?
-        </p>
-      </div>
-      
-      <div className="bg-white shadow-md p-6 rounded-xl border-l-4 border-green-500">
-        <h4 className="font-semibold text-green-800 mb-2">📝 Answer Evaluation</h4>
-        <p>
-          How can we assist students in improving structured and essay-type answers by evaluating their responses using semantic scoring and offering actionable feedback aligned with curriculum standards?
-        </p>
-      </div>
-      
-      <div className="bg-white shadow-md p-6 rounded-xl border-l-4 border-green-500">
-        <h4 className="font-semibold text-green-800 mb-2">🔁 Spaced Repetition</h4>
-        <p>
-          How can we optimize vocabulary memorization in biology by customizing spaced review intervals based on the difficulty of terms and the student’s recall performance?
-        </p>
-      </div>
-
-    </div>
-  ),
-}
-,
+    label: "Introduction",
+    content: (
+      <p className="text-gray-700 leading-relaxed">
+        Traditional loan processing systems in Sri Lanka often involve manual steps and static eligibility criteria, leading to inefficiencies, human bias, and limited guidance. This project introduces a predictive system combining ML, OCR, and AI to automate and enhance customer interaction, eligibility prediction, and alternative financing. It empowers users and reduces bank workload while aligning with real-time financial insights.
+      </p>
+    ),
+  },
   {
-  label: "Research Objectives",
-  content: (
-    <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8 text-left text-gray-700 text-base">
-      
-      <div className="bg-white shadow-md p-6 rounded-xl border-l-4 border-green-500">
-        <h4 className="font-semibold text-green-800 mb-2">📚 AI Summarization</h4>
-        <p>
-          To develop a summarization tool that generates clear, concise, and customizable summaries from A/L biology materials, with voice output and support for multiple learning styles.
-        </p>
+    label: "Research Problem",
+    content: (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
+        {[{
+          title: "🔍 Loan Prediction Bias",
+          desc: "Current systems rely on static salary-based rules, ignoring asset-based potential and leading to unfair rejections."
+        }, {
+          title: "📄 Manual Document Review",
+          desc: "Traditional banking workflows require manual checks for payslips, ID documents, and CRIB reports, causing delays."
+        }, {
+          title: "💬 Lack of Personalized Support",
+          desc: "Applicants lack clarity on eligibility and do not receive targeted guidance when rejected."
+        }, {
+          title: "📉 Low Financial Literacy",
+          desc: "Most users are unaware of alternative financing methods, resulting in missed opportunities for loan approval."
+        }].map(({ title, desc }, i) => (
+          <div key={i} className="bg-white p-5 rounded-lg shadow-md border border-indigo-200 hover:shadow-lg transition">
+            <h4 className="text-indigo-700 font-bold mb-2">{title}</h4>
+            <p className="text-sm leading-relaxed">{desc}</p>
+          </div>
+        ))}
       </div>
-
-      <div className="bg-white shadow-md p-6 rounded-xl border-l-4 border-green-500">
-        <h4 className="font-semibold text-green-800 mb-2">🧪 Adaptive Quizzes</h4>
-        <p>
-          To create a quiz platform that adapts MCQ difficulty in real-time based on student performance and provides detailed feedback and analytics to support targeted learning.
-        </p>
+    ),
+  },
+  {
+    label: "Objectives",
+    content: (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
+        {[{
+          title: "🤖 AI Chatbot",
+          desc: "To assist users with general and personalized loan information using NLP and structured financial documents."
+        }, {
+          title: "📊 Loan Eligibility Prediction",
+          desc: "To develop a data-driven module that uses OCR and ML to determine eligibility based on payslips, CRIB, and assets."
+        }, {
+          title: "💡 Financial Guidance",
+          desc: "To offer alternative solutions (collateral-based loans, savings plans) to users rejected under traditional criteria."
+        }, {
+          title: "📈 Automation",
+          desc: "To reduce bank workload and approval time through integrated ML and chatbot workflows."
+        }].map(({ title, desc }, i) => (
+          <div key={i} className="bg-white p-5 rounded-lg shadow-md border border-indigo-200 hover:shadow-lg transition">
+            <h4 className="text-indigo-700 font-bold mb-2">{title}</h4>
+            <p className="text-sm leading-relaxed">{desc}</p>
+          </div>
+        ))}
       </div>
-
-      <div className="bg-white shadow-md p-6 rounded-xl border-l-4 border-green-500">
-        <h4 className="font-semibold text-green-800 mb-2">📝 Answer Evaluation</h4>
-        <p>
-          To build a system that evaluates student-written structured and essay-type answers, offers improvement suggestions, and tracks individual progress using relevant scoring models.
-        </p>
-      </div>
-
-      <div className="bg-white shadow-md p-6 rounded-xl border-l-4 border-green-500">
-        <h4 className="font-semibold text-green-800 mb-2">🔁 Spaced Repetition</h4>
-        <p>
-          To implement a vocabulary learning tool using the SM-2 algorithm that adjusts review intervals based on recall difficulty, helping students retain complex biology terms effectively.
-        </p>
-      </div>
-
-    </div>
-  ),
-}
-
-
+    ),
+  },
 ];
 
 export default function ResearchDomain() {
   const [activeTab, setActiveTab] = useState(0);
 
-  // Sections that should have the outer border (index-based)
-  const borderedSections = [0, 1]; // Background and Research Gap
-
   return (
-    <section className="py-24 bg-gradient-to-br from-green-50 via-white to-emerald-100" id="domain">
-      <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-center text-green-700 mb-12">🔍 Research Domain</h2>
+    <section id="domain" className="py-24 bg-gradient-to-b from-white via-indigo-50 to-indigo-100">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-4xl font-extrabold text-center text-indigo-700 mb-12">
+          🧪 Research Summary
+        </h2>
 
-        {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-10">
+        <div className="flex flex-wrap justify-center gap-3 mb-10">
           {sections.map((section, index) => (
             <button
               key={index}
               onClick={() => setActiveTab(index)}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all
-                ${
-                  activeTab === index
-                    ? "bg-green-600 text-white shadow-lg"
-                    : "bg-white text-green-700 hover:bg-green-100 border border-green-300"
-                }`}
+              className={`px-5 py-2 text-sm rounded-full font-medium transition shadow-sm hover:shadow-md duration-200 ${
+                activeTab === index
+                  ? "bg-indigo-600 text-white"
+                  : "bg-white text-indigo-700 border border-indigo-300 hover:bg-indigo-100"
+              }`}
             >
               {section.label}
             </button>
           ))}
         </div>
 
-        {/* Content */}
-        <div
-          className={`p-6 md:p-8 rounded-xl shadow-md transition-all duration-300 ${
-            borderedSections.includes(activeTab)
-              ? "bg-white border-l-4 border-green-500"
-              : "bg-white"
-          }`}
-        >
+        <div className="bg-white rounded-2xl shadow-lg p-8 border border-indigo-200">
           {sections[activeTab].content}
         </div>
       </div>

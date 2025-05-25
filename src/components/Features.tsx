@@ -1,43 +1,42 @@
 const features = [
   {
-    title: "AI Summarization",
-    desc: "Developed and analyzed in both monolithic and microservices architectures, this tool uses the Flan-T5 base model with RAG to generate structured summaries and notes with voice output. Notes are available in English, Tamil, and Sinhala."
+    title: "AI Chatbot Assistance",
+    desc: "Provides intelligent, document-aware responses for loan-related queries. Supports both general inquiries and personalized answers by integrating NLP, RAG, and customer data retrieval."
   },
   {
-    title: "Adaptive Quizzes",
-    desc: "Generates MCQs dynamically and adjusts difficulty in real-time using Item Response Theory (IRT), student performance tracking, and semantic filtering to enhance personalized practice."
+    title: "Document-Driven Eligibility Check",
+    desc: "Analyzes OCR-extracted information from payslips, CRIB reports, and ID documents to evaluate loan eligibility using a logistic regression model with 79% accuracy."
   },
   {
-    title: "Answer Evaluation",
-    desc: "Evaluates structured and essay-type responses using semantic similarity, grammar scoring, and curriculum-aligned model answers to provide personalized feedback and performance insights."
+    title: "Credit Limit Prediction",
+    desc: "Uses a random forest regression model to recommend personalized loan amounts based on verified financial data, such as income, savings, and credit history."
   },
   {
-    title: "Spaced Repetition",
-    desc: "Uses the SM-2 algorithm to schedule personalized vocabulary reviews based on recall performance, with daily flashcards, pronunciation support, and progress tracking."
+    title: "Financial Guidance & Alternatives",
+    desc: "Offers actionable recommendations for rejected applicants, including collateral-based options, savings plans, and reapplication strategies powered by a high-performing predictive model (R² = 0.98)."
   },
 ];
 
-
 export default function Features() {
   return (
-    <section id="features" className="py-24 bg-white">
+    <section id="features" className="py-24 bg-gradient-to-b from-purple-50 via-white to-indigo-100">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-green-700 text-center mb-16">
-          🌱 Key Features Overview
+        <h2 className="text-4xl font-extrabold text-center text-indigo-700 mb-16">
+          ✨ Key Features of the System
         </h2>
-        <div className="relative border-l-4 border-green-200 space-y-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {features.map((feature, index) => (
-            <div key={index} className="relative pl-10 group">
-              {/* Number Badge */}
-              <span className="absolute -left-5 top-1 w-10 h-10 bg-green-500 text-white font-bold text-sm rounded-full flex items-center justify-center shadow-md ring-2 ring-white">
-                {index + 1}
-              </span>
-
-              {/* Card */}
-              <div className="bg-gradient-to-br from-white to-green-50 p-6 rounded-xl shadow-md border-l-[4px] border-green-400 transition-all hover:shadow-lg">
-                <h3 className="text-xl font-bold text-green-800">{feature.title}</h3>
-                <p className="mt-2 text-gray-600 text-sm leading-relaxed">{feature.desc}</p>
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl p-6 border border-indigo-200 transition duration-300 transform hover:-translate-y-1"
+            >
+              <div className="flex items-center gap-4 mb-3">
+                <div className="w-10 h-10 bg-indigo-600 text-white font-bold rounded-full flex items-center justify-center shadow-sm">
+                  {index + 1}
+                </div>
+                <h3 className="text-lg font-semibold text-indigo-800">{feature.title}</h3>
               </div>
+              <p className="text-sm text-gray-600 leading-relaxed">{feature.desc}</p>
             </div>
           ))}
         </div>
