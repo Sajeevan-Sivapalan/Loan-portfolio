@@ -6,12 +6,6 @@ const highlights = [
       "Built with Retrieval-Augmented Generation (RAG), the chatbot delivers instant, accurate responses to user-specific and policy-based loan inquiries.",
   },
   {
-    title: "OCR & Document Analysis",
-    icon: "📄",
-    description:
-      "Utilizes Tesseract OCR to extract and validate information from payslips, ID cards, and CRIB reports for automated eligibility checks.",
-  },
-  {
     title: "Loan Prediction Models",
     icon: "📈",
     description:

@@ -8,9 +8,9 @@ const tools = [
   { name: "Firebase", icon: "🔥", description: "NoSQL database for analytics" },
   { name: "FastAPI", icon: "⚡", description: "Lightweight Python backend" },
   { name: "Vite", icon: "🚀", description: "Blazing fast dev server for React" },
-  { name: "Azure", icon: "☁️", description: "Cloud hosting and deployment (CI/CD)" },
+  { name: "MySQL", icon: "🗄️", description: "Relational database management for structured financial data" },
   { name: "GitHub Actions", icon: "🔁", description: "Automation workflows for building, testing, deploying" },
-  { name: "OCR (Tesseract)", icon: "🔍", description: "Text extraction from scanned content & images" },
+  { name: "Figma", icon: "🎨", description: "UI/UX design and prototyping for the system’s frontend and user workflows" }, 
 ];
 
 export default function Tools() {

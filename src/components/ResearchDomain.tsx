@@ -13,7 +13,7 @@ const sections = [
     label: "Introduction",
     content: (
       <p className="text-gray-700 leading-relaxed">
-        Traditional loan processing systems in Sri Lanka often involve manual steps and static eligibility criteria, leading to inefficiencies, human bias, and limited guidance. This project introduces a predictive system combining ML, OCR, and AI to automate and enhance customer interaction, eligibility prediction, and alternative financing. It empowers users and reduces bank workload while aligning with real-time financial insights.
+        Traditional loan processing systems in Sri Lanka often involve manual steps and static eligibility criteria, leading to inefficiencies, human bias, and limited guidance. This project introduces a predictive system combining ML, and AI to automate and enhance customer interaction, eligibility prediction, and alternative financing. It empowers users and reduces bank workload while aligning with real-time financial insights.
       </p>
     ),
   },
@@ -51,7 +51,7 @@ const sections = [
           desc: "To assist users with general and personalized loan information using NLP and structured financial documents."
         }, {
           title: "📊 Loan Eligibility Prediction",
-          desc: "To develop a data-driven module that uses OCR and ML to determine eligibility based on payslips, CRIB, and assets."
+          desc: "To develop a data-driven module that uses ML to determine eligibility based on payslips, CRIB, and assets."
         }, {
           title: "💡 Financial Guidance",
           desc: "To offer alternative solutions (collateral-based loans, savings plans) to users rejected under traditional criteria."

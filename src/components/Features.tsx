@@ -4,16 +4,12 @@ const features = [
     desc: "Provides intelligent, document-aware responses for loan-related queries. Supports both general inquiries and personalized answers by integrating NLP, RAG, and customer data retrieval."
   },
   {
-    title: "Document-Driven Eligibility Check",
-    desc: "Analyzes OCR-extracted information from payslips, CRIB reports, and ID documents to evaluate loan eligibility using a logistic regression model with 79% accuracy."
-  },
-  {
     title: "Credit Limit Prediction",
     desc: "Uses a random forest regression model to recommend personalized loan amounts based on verified financial data, such as income, savings, and credit history."
   },
   {
     title: "Financial Guidance & Alternatives",
-    desc: "Offers actionable recommendations for rejected applicants, including collateral-based options, savings plans, and reapplication strategies powered by a high-performing predictive model (R² = 0.98)."
+    desc: "Many financially capable individuals face loan rejection due to rigid eligibility criteria that overlook their collateral assets. Traditional financial systems do not offer personalized guidance for requalification through structured savings. This research addresses the need for an intelligent system that transforms collateral into actionable savings strategies using real-time analytics and machine learning."
   },
 ];
 

@@ -3,7 +3,7 @@ export default function About() {
     <section id="about" className="py-24 bg-gradient-to-br from-sky-50 via-white to-red-100">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-red-800 mb-4">🚀 About Our Smart Lending Platform</h2>
+          <h2 className="text-4xl font-extrabold text-red-800 mb-4">🚀 About Our Smart Loan Platform</h2>
           <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
             A transformative <span className="font-semibold text-red-700">AI-driven loan eligibility system</span> designed to make credit more accessible, efficient, and transparent. Developed by a team of passionate undergraduates, it blends technology and usability to serve the needs of modern banking in Sri Lanka.
           </p>
@@ -15,11 +15,6 @@ export default function About() {
               icon: "💬",
               title: "Conversational Chatbot",
               desc: "Delivers instant responses on loan questions with intelligent document-based and user-specific dialogue support."
-            },
-            {
-              icon: "📑",
-              title: "Automated Eligibility Check",
-              desc: "Leverages OCR and machine learning to assess documents and predict user qualification in real-time."
             },
             {
               icon: "📈",
