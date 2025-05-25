@@ -12,7 +12,7 @@ const allDocuments = [
     files: [
       { name: "Final Report - IT21164644 ", path: "IT21164644 _Final-Report.pdf" },
       { name: "Final Report - IT21068478", path: "IT21068478_Final-Report.pdf" },
-      { name: "Final Report - IT21191060 ", path: "IT2191060_Final" },z
+      { name: "Final Report - IT21191060 ", path: "IT2191060_Final" },
       { name: "Final Group Report", path: "Final_Report-24_25J_257.pdf" },
     ],
   },
