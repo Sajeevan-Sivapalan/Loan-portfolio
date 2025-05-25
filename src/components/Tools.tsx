@@ -5,7 +5,7 @@ const tools = [
   { name: "Python", icon: "🐍", description: "AI/ML backend services" },
   { name: "TensorFlow", icon: "🧮", description: "Model training & evaluation" },
   { name: "HuggingFace Transformers", icon: "🤗", description: "LLM fine-tuning & inference" },
-  { name: "MongoDB", icon: "🍃", description: "NoSQL database for analytics" },
+  { name: "Firebase", icon: "🔥", description: "NoSQL database for analytics" },
   { name: "FastAPI", icon: "⚡", description: "Lightweight Python backend" },
   { name: "Vite", icon: "🚀", description: "Blazing fast dev server for React" },
   { name: "Azure", icon: "☁️", description: "Cloud hosting and deployment (CI/CD)" },
