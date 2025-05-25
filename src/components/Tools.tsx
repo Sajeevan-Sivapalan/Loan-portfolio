@@ -15,19 +15,19 @@ const tools = [
 
 export default function Tools() {
   return (
-    <section id="tools" className="py-24 bg-gradient-to-tr from-indigo-100 via-white to-purple-100">
+    <section id="tools" className="py-24 bg-gradient-to-tr from-red-100 via-white to-red-100">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-purple-800 mb-16">🧰 Technology Stack</h2>
+        <h2 className="text-4xl font-bold text-center text-red-800 mb-16">🧰 Technology Stack</h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {tools.map((tool, index) => (
             <div
               key={index}
-              className="flex items-start gap-4 bg-white rounded-xl shadow-lg border-l-4 border-purple-500 p-6 hover:shadow-xl hover:border-indigo-500 transition duration-300"
+              className="flex items-start gap-4 bg-white rounded-xl shadow-lg border-l-4 border-red-500 p-6 hover:shadow-xl hover:border-red-500 transition duration-300"
             >
-              <div className="text-4xl text-purple-600">{tool.icon}</div>
+              <div className="text-4xl text-red-600">{tool.icon}</div>
               <div>
-                <h3 className="text-lg font-bold text-purple-800 mb-1">{tool.name}</h3>
+                <h3 className="text-lg font-bold text-red-800 mb-1">{tool.name}</h3>
                 <p className="text-sm text-gray-600 leading-snug">{tool.description}</p>
               </div>
             </div>

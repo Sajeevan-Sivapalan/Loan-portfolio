@@ -1,11 +1,11 @@
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-gradient-to-br from-sky-50 via-white to-blue-100">
+    <section id="about" className="py-24 bg-gradient-to-br from-sky-50 via-white to-red-100">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-blue-800 mb-4">🚀 About Our Smart Lending Platform</h2>
+          <h2 className="text-4xl font-extrabold text-red-800 mb-4">🚀 About Our Smart Lending Platform</h2>
           <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            A transformative <span className="font-semibold text-blue-700">AI-driven loan eligibility system</span> designed to make credit more accessible, efficient, and transparent. Developed by a team of passionate undergraduates, it blends technology and usability to serve the needs of modern banking in Sri Lanka.
+            A transformative <span className="font-semibold text-red-700">AI-driven loan eligibility system</span> designed to make credit more accessible, efficient, and transparent. Developed by a team of passionate undergraduates, it blends technology and usability to serve the needs of modern banking in Sri Lanka.
           </p>
         </div>
 
@@ -34,10 +34,10 @@ export default function About() {
           ].map(({ icon, title, desc }, idx) => (
             <div
               key={idx}
-              className="bg-white border border-blue-200 rounded-2xl p-6 shadow-md hover:shadow-xl transition-transform hover:-translate-y-1 text-center flex flex-col items-center"
+              className="bg-white border border-red-200 rounded-2xl p-6 shadow-md hover:shadow-xl transition-transform hover:-translate-y-1 text-center flex flex-col items-center"
             >
-              <div className="text-4xl mb-4 text-blue-600">{icon}</div>
-              <h4 className="text-lg font-bold text-blue-800 mb-2">{title}</h4>
+              <div className="text-4xl mb-4 text-red-600">{icon}</div>
+              <h4 className="text-lg font-bold text-red-800 mb-2">{title}</h4>
               <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
             </div>
           ))}

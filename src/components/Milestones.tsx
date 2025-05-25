@@ -75,22 +75,22 @@ const milestones = [
 
 export default function Milestones() {
   return (
-    <section id="milestones" className="py-24 bg-gradient-to-br from-sky-50 via-white to-blue-100">
+    <section id="milestones" className="py-24 bg-gradient-to-br from-sky-50 via-white to-red-100">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-center text-blue-800 mb-16">📌 Project Milestones</h2>
+        <h2 className="text-4xl font-extrabold text-center text-red-800 mb-16">📌 Project Milestones</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {milestones.map((m, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-transform hover:-translate-y-1 border-l-4 border-blue-500 p-6 flex flex-col justify-between"
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-transform hover:-translate-y-1 border-l-4 border-red-500 p-6 flex flex-col justify-between"
             >
               <div>
-                <h3 className="text-lg font-bold text-blue-800 mb-1">{m.title}</h3>
+                <h3 className="text-lg font-bold text-red-800 mb-1">{m.title}</h3>
                 <p className="text-sm text-gray-500 mb-3">{m.date}</p>
                 <p className="text-sm text-gray-600 leading-relaxed">{m.description}</p>
               </div>
               <div className="mt-4">
-                <span className="inline-block text-xs font-semibold bg-blue-100 text-blue-800 px-3 py-1 rounded-full">
+                <span className="inline-block text-xs font-semibold bg-red-100 text-red-800 px-3 py-1 rounded-full">
                   {m.marks}
                 </span>
               </div>

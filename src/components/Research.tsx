@@ -27,17 +27,17 @@ const highlights = [
 
 export default function Research() {
   return (
-    <section id="research" className="py-24 bg-gradient-to-br from-indigo-50 via-white to-purple-100">
+    <section id="research" className="py-24 bg-gradient-to-br from-red-50 via-white to-red-100">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-center text-purple-700 mb-16">📌 Research Highlights</h2>
+        <h2 className="text-4xl font-extrabold text-center text-red-700 mb-16">📌 Research Highlights</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {highlights.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl border border-purple-200 p-6 text-center shadow-md hover:shadow-xl transition-transform duration-300 hover:-translate-y-1"
+              className="bg-white rounded-2xl border border-red-200 p-6 text-center shadow-md hover:shadow-xl transition-transform duration-300 hover:-translate-y-1"
             >
-              <div className="text-4xl mb-4 text-purple-600">{item.icon}</div>
-              <h3 className="text-lg font-bold text-purple-800 mb-2">{item.title}</h3>
+              <div className="text-4xl mb-4 text-red-600">{item.icon}</div>
+              <h3 className="text-lg font-bold text-red-800 mb-2">{item.title}</h3>
               <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
             </div>
           ))}

@@ -16,7 +16,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg sticky top-0 z-50">
+    <nav className="bg-gradient-to-r from-red-600 to-red-600 text-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <h1 className="text-2xl font-bold tracking-wide text-white">SmartLend AI</h1>
 
@@ -56,7 +56,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {menuOpen && (
-        <div className="md:hidden bg-indigo-600 text-white px-4 pb-4 space-y-2 shadow-md">
+        <div className="md:hidden bg-red-600 text-white px-4 pb-4 space-y-2 shadow-md">
           {navLinks.map((link, i) => (
             <a
               key={i}

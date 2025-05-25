@@ -34,8 +34,8 @@ const sections = [
           title: "📉 Low Financial Literacy",
           desc: "Most users are unaware of alternative financing methods, resulting in missed opportunities for loan approval."
         }].map(({ title, desc }, i) => (
-          <div key={i} className="bg-white p-5 rounded-lg shadow-md border border-indigo-200 hover:shadow-lg transition">
-            <h4 className="text-indigo-700 font-bold mb-2">{title}</h4>
+          <div key={i} className="bg-white p-5 rounded-lg shadow-md border border-red-200 hover:shadow-lg transition">
+            <h4 className="text-red-700 font-bold mb-2">{title}</h4>
             <p className="text-sm leading-relaxed">{desc}</p>
           </div>
         ))}
@@ -59,8 +59,8 @@ const sections = [
           title: "📈 Automation",
           desc: "To reduce bank workload and approval time through integrated ML and chatbot workflows."
         }].map(({ title, desc }, i) => (
-          <div key={i} className="bg-white p-5 rounded-lg shadow-md border border-indigo-200 hover:shadow-lg transition">
-            <h4 className="text-indigo-700 font-bold mb-2">{title}</h4>
+          <div key={i} className="bg-white p-5 rounded-lg shadow-md border border-red-200 hover:shadow-lg transition">
+            <h4 className="text-red-700 font-bold mb-2">{title}</h4>
             <p className="text-sm leading-relaxed">{desc}</p>
           </div>
         ))}
@@ -73,9 +73,9 @@ export default function ResearchDomain() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section id="domain" className="py-24 bg-gradient-to-b from-white via-indigo-50 to-indigo-100">
+    <section id="domain" className="py-24 bg-gradient-to-b from-white via-red-50 to-red-100">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-extrabold text-center text-indigo-700 mb-12">
+        <h2 className="text-4xl font-extrabold text-center text-red-700 mb-12">
           🧪 Research Summary
         </h2>
 
@@ -86,8 +86,8 @@ export default function ResearchDomain() {
               onClick={() => setActiveTab(index)}
               className={`px-5 py-2 text-sm rounded-full font-medium transition shadow-sm hover:shadow-md duration-200 ${
                 activeTab === index
-                  ? "bg-indigo-600 text-white"
-                  : "bg-white text-indigo-700 border border-indigo-300 hover:bg-indigo-100"
+                  ? "bg-red-600 text-white"
+                  : "bg-white text-red-700 border border-red-300 hover:bg-red-100"
               }`}
             >
               {section.label}
@@ -95,7 +95,7 @@ export default function ResearchDomain() {
           ))}
         </div>
 
-        <div className="bg-white rounded-2xl shadow-lg p-8 border border-indigo-200">
+        <div className="bg-white rounded-2xl shadow-lg p-8 border border-red-200">
           {sections[activeTab].content}
         </div>
       </div>

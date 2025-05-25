@@ -35,27 +35,27 @@ const allDocuments = [
 
 export default function Documents() {
   return (
-    <section id="documents" className="py-24 bg-gradient-to-tr from-indigo-50 to-indigo-100">
+    <section id="documents" className="py-24 bg-gradient-to-tr from-red-50 to-red-100">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-indigo-700 mb-16">
+        <h2 className="text-4xl font-bold text-center text-red-700 mb-16">
           📁 Project Documents
         </h2>
 
         {allDocuments.map((section, idx) => (
           <div key={idx} className="mb-12">
-            <h3 className="text-2xl font-semibold text-indigo-800 mb-6 border-b border-indigo-300 pb-2">
+            <h3 className="text-2xl font-semibold text-red-800 mb-6 border-b border-red-300 pb-2">
               {section.category}
             </h3>
             <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               {section.files.map((file, i) => (
-                <div key={i} className="bg-white shadow-lg rounded-xl p-5 border-t-4 border-indigo-400 hover:border-indigo-600 transition-all">
+                <div key={i} className="bg-white shadow-lg rounded-xl p-5 border-t-4 border-red-400 hover:border-red-600 transition-all">
                   <div className="flex items-start gap-3">
                     <div className="text-3xl">📄</div>
                     <div className="text-sm font-medium text-gray-800 line-clamp-2">
                       {file.name}
                     </div>
                   </div>
-                  <div className="mt-4 flex justify-between text-xs text-indigo-600 font-medium">
+                  <div className="mt-4 flex justify-between text-xs text-red-600 font-medium">
                     <a
                       href={`/docs/${file.path}`}
                       target="_blank"
