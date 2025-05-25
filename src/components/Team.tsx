@@ -17,6 +17,18 @@ const team = [
     email: "it21191060@my.sliit.lk",
     img: "https://ui-avatars.com/api/?name=Pravean+P+R+I&background=ff0000&color=fff",
   },
+  {
+    name: "Ms. Suranjini Silva",
+    role: "Senior Lecturer, Faculty of Computing | Computer Systems Engineering",
+    email: "suranjini.s@sliit.lk",
+    img: "https://ui-avatars.com/api/?name=Suranjini+Silva&background=ff0000&color=fff",
+  },
+  {
+    name: "Prof. Anuradha Jayakody",
+    role: "Head, Dept. of Computer Systems Engineering | Faculty of Computing",
+    email: "anuradha.j@sliit.lk",
+    img: "https://ui-avatars.com/api/?name=Anuradha+Jayakody&background=ff0000&color=fff",
+  },
 ];
 
 export default function Team() {
