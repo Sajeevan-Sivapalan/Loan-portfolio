@@ -1,6 +1,6 @@
 const team = [
   {
-    name: "Pathirathna D N",
+    name: "Pathirathna D.N",
     role: "Group Member (IT21164644)",
     email: "it21164644@my.sliit.lk",
     img: "https://ui-avatars.com/api/?name=Pathirathna+D+N&background=ff0000&color=fff",

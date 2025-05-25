@@ -4,7 +4,16 @@ const allDocuments = [
     files: [
       { name: "Proposal Report - IT21164644 ", path: "IT21164644 -Project-Proposal.pdf" },
       { name: "Proposal Report - IT21068478", path: "IT21068478-Project-Proposal.pdf" },
-      { name: "Proposal Report - IT21191060", path: "IT2191060_Project_Proposal" },
+      { name: "Proposal Report - IT21191060", path: "IT2191060_Project_Proposal.pdf" },
+    ],
+  },
+  {
+    category: "Check List",
+    files: [
+      { name: "Check List 1 ", path: "24-25J-268 SRS DOCUMENT.pdf" },
+      { name: "Check List 2", path: "Business Canvas Model.pdf" },
+      { name: "Check List 3 ", path: "24-25J-268.pdf" },
+      { name: "Check List 4", path: "24-25J-268_1.pdf" },
     ],
   },
   {
@@ -12,7 +21,7 @@ const allDocuments = [
     files: [
       { name: "Final Report - IT21164644 ", path: "IT21164644 _Final-Report.pdf" },
       { name: "Final Report - IT21068478", path: "IT21068478_Final-Report.pdf" },
-      { name: "Final Report - IT21191060 ", path: "IT2191060_Final" },
+      { name: "Final Report - IT21191060 ", path: "IT2191060_Final.pdf" },
       { name: "Final Group Report", path: "Final_Report-24_25J_257.pdf" },
     ],
   },
