@@ -1,9 +1,15 @@
 const allDocuments = [
   {
+    category: "TAF",
+    files: [
+      { name: "TAF", path: "IT4010-TAF-2024-25J[1][1].pdf" },
+    ],
+  },
+  {
     category: "Project Proposal",
     files: [
-      { name: "Proposal Report - IT21164644 ", path: "IT21164644 -Project-Proposal.pdf" },
-      { name: "Proposal Report - IT21068478", path: "IT21068478-Project-Proposal.pdf" },
+      { name: "Proposal Report - IT21164644 ", path: "IT21164644_Project Proposal.pdf" },
+      { name: "Proposal Report - IT21068478", path: "IT21142178_PROP0SAL.pdf" },
       { name: "Proposal Report - IT21191060", path: "IT2191060_Project_Proposal.pdf" },
     ],
   },
@@ -20,7 +26,7 @@ const allDocuments = [
     category: "Final Reports",
     files: [
       { name: "Final Report - IT21164644 ", path: "IT21164644 _Final-Report.pdf" },
-      { name: "Final Report - IT21068478", path: "IT21068478_Final-Report.pdf" },
+      { name: "Final Report - IT21068478", path: "IT21142178_Final_Report.pdf" },
       { name: "Final Report - IT21191060 ", path: "IT2191060_Final.pdf" },
       { name: "Final Group Report", path: "Final_Report-24_25J_257.pdf" },
     ],
@@ -31,13 +37,13 @@ const allDocuments = [
       { name: "Proposal Presentation", path: "Proposal_Presentation-24-25J-.pdf" },
       { name: "Progress Presentation 1", path: "Progress_Presentation_1-24-25J-.pdf" },
       { name: "Progress Presentation 2", path: "Progress_Presentation_2-24-25J-.pdf" },
-      { name: "Final Presentation", path: "Final_Presentation.pdf" },
+      { name: "Final Presentation", path: "Research-Paper-24-25J-268.pdf" },
     ],
   },
   {
     category: "Research Paper",
     files: [
-      { name: "Research Paper", path: "Research_Paper-24-25J-.pdf" },
+      { name: "Research Paper", path: "Research-Paper-24-25J-268.pdf" },
     ],
   },
 ];
