@@ -8,7 +8,7 @@ export default function Hero() {
         {/* Left: Text */}
         <div>
           <h1 className="text-4xl lg:text-5xl font-extrabold text-red-800 leading-tight mb-6">
-            Smarter Lending with <br />
+            Smarter Loan with <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-500">
               Predictive Intelligence
             </span>
