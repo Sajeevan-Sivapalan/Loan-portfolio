@@ -14,7 +14,7 @@ export default function Hero() {
             </span>
           </h1>
           <p className="text-lg text-gray-700 mb-6 leading-relaxed max-w-lg">
-            Revolutionizing loan approvals using machine learning, OCR, and AI chatbots. Discover a faster, fairer, and smarter financial experience with SmartLend AI.
+            Revolutionizing loan approvals using machine learning, OCR, and AI chatbots. Discover a faster, fairer, and smarter financial experience with QuickLoan.
           </p>
           <a
             href="#about"

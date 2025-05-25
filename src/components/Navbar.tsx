@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <nav className="bg-gradient-to-r from-red-600 to-red-600 text-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold tracking-wide text-white">SmartLend AI</h1>
+        <h1 className="text-2xl font-bold tracking-wide text-white">QuickLoan</h1>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
