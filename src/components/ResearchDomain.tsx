@@ -33,6 +33,9 @@ const sections = [
         }, {
           title: "📉 Low Financial Literacy",
           desc: "Most users are unaware of alternative financing methods, resulting in missed opportunities for loan approval."
+        }, {
+          title: "📉 Loan Details Accessibility",
+          desc: "There is no easy access to loan details for customers, as general inquiries are typically handled via phone calls. Bank staff must manually access internal databases, leading to delays and inefficiencies."
         }].map(({ title, desc }, i) => (
           <div key={i} className="bg-white p-5 rounded-lg shadow-md border border-red-200 hover:shadow-lg transition">
             <h4 className="text-red-700 font-bold mb-2">{title}</h4>
