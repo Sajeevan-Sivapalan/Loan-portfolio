@@ -18,26 +18,26 @@ const allDocuments = [
     files: [
       { name: "Check List 1 ", path: "24-25J-268 SRS DOCUMENT.pdf" },
       { name: "Check List 2", path: "Business Canvas Model.pdf" },
-      { name: "Check List 3 ", path: "24-25J-268.pdf" },
+      { name: "Check List 3 ", path: "24-25J-268 .pdf" },
       { name: "Check List 4", path: "24-25J-268_1.pdf" },
     ],
   },
   {
     category: "Final Reports",
     files: [
-      { name: "Final Report - IT21164644 ", path: "IT21164644 _Final-Report.pdf" },
-      { name: "Final Report - IT21068478", path: "IT21142178_Final_Report.pdf" },
-      { name: "Final Report - IT21191060 ", path: "IT2191060_Final.pdf" },
-      { name: "Final Group Report", path: "Final_Report-24_25J_257.pdf" },
+      { name: "Final Report - IT21164644 ", path: "IT21164644_Project Proposal.pdf" },
+      { name: "Final Report - IT21068478", path: "IT21142178_PROP0SAL.pdf" },
+      { name: "Final Report - IT21191060", path: "IT2191060_Final.pdf" },
+      { name: "Final Group Report", path: "24-25j-158  -Final Group Report (1).pdf" },
     ],
   },
   {
     category: "Presentations",
     files: [
-      { name: "Proposal Presentation", path: "Proposal_Presentation-24-25J-.pdf" },
-      { name: "Progress Presentation 1", path: "Progress_Presentation_1-24-25J-.pdf" },
-      { name: "Progress Presentation 2", path: "Progress_Presentation_2-24-25J-.pdf" },
-      { name: "Final Presentation", path: "Research-Paper-24-25J-268.pdf" },
+      { name: "Proposal Presentation", path: "Loan Eligibility Prediction System.pdf" },
+      { name: "Progress Presentation 1", path: "Loan Eligibility Prediction System.pdf" },
+      { name: "Progress Presentation 2", path: "Loan Eligibility Prediction System.pdf" },
+      { name: "Final Presentation", path: "Loan Eligibility Prediction System.pdf" },
     ],
   },
   {
